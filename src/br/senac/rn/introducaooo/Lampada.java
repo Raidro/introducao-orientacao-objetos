@@ -2,20 +2,19 @@ package br.senac.rn.introducaooo;
 
 public class Lampada {
 
-    final Integer FREQUECIA = 60;
-    String cor;
-    Integer potencia;
-    Integer tensao;
-    Float comprimento;
-    Boolean estado;
+    public final Integer FREQUECIA = 60;
+    public String cor;
+    public Integer potencia;
+    public Integer tensao;
+    public Float comprimento;
+    private Boolean estado = false;
 
-    void acende() {
+    public void acende() {
         estado = true;
     }
 
-    ;
 
-    void apaga() {
+    public void apaga() {
         estado = false;
 
     }
@@ -34,7 +33,7 @@ public class Lampada {
     public String toString() {
         return "Lampada{" +
                 "cor='" + cor + '\'' +
-                ", estado=" + estado +
+                ", estado=" + statsLampada() +
                 '}';
     }
 }
