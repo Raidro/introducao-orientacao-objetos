@@ -7,15 +7,16 @@ public class Lampada {
     Integer potencia;
     Integer tensao;
     Float comprimento;
+    Boolean estado;
 
-    Boolean acende() {
-        return true;
+    void acende() {
+        estado = true;
     }
 
     ;
 
-    Boolean apaga() {
-        return false;
+    void apaga() {
+        estado = false;
 
     }
 
