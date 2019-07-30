@@ -8,9 +8,18 @@ public class Lampada {
     Integer tensao;
     Float comprimento;
 
-    Boolean acende() {};
+    Boolean acende() {
+        return true;
+    }
 
-    Boolean apaga()  {};
+    ;
+
+    Boolean apaga() {
+        return false;
+
+    }
+
+    ;
 
 
 }
