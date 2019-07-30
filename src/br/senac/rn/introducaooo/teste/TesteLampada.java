@@ -6,7 +6,12 @@ public class TesteLampada {
 
     public static void main(String[] args) {
 
-        Lampada lampada = new Lampada();
+        Lampada lampada = new Lampada(); // criaodu ma lampada nova
+
+        lampada.cor = "Branca";
+        lampada.potencia = 80;
+
+        lampada.acende();
 
         System.out.println(lampada);
 

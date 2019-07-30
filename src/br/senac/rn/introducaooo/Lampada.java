@@ -2,15 +2,15 @@ package br.senac.rn.introducaooo;
 
 public class Lampada {
 
-    public final Integer FREQUECIA = 60;
-    public String cor;
+    public final Integer FREQUECIA = 60; // frequencia é uma constante
+    public String cor; //
     public Integer potencia;
     public Integer tensao;
     public Float comprimento;
-    private Boolean estado = false;
+    private Boolean estado = false; // não pode ser visto de outros pacotes e inicia com falso (desligado)
 
-    public void acende() {
-        estado = true;
+    public void acende() { //
+        estado = true; // retrona um estado (true)
     }
 
 
@@ -19,7 +19,7 @@ public class Lampada {
 
     }
 
-    public String statsLampada() {
+    public String statsLampada() { // função é publica e pode ser visto de outros pacotes
         if (estado == true) {
             return "LIGADO";
 
@@ -29,8 +29,8 @@ public class Lampada {
         }
     }
 
-    @Override
-    public String toString() {
+    @Override // sobreescreve o metodo toString do object(pai)(herança)
+    public String toString() { //
         return "Lampada{" +
                 "cor='" + cor + '\'' +
                 ", estado=" + statsLampada() +
