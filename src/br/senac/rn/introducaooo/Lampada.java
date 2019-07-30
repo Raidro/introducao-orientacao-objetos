@@ -30,5 +30,11 @@ public class Lampada {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "Lampada{" +
+                "cor='" + cor + '\'' +
+                ", estado=" + estado +
+                '}';
+    }
 }

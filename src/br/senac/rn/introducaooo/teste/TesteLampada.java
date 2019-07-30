@@ -8,6 +8,8 @@ public class TesteLampada {
 
         Lampada lampada = new Lampada();
 
+        System.out.println(lampada);
+
     }
 
 
