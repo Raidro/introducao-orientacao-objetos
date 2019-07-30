@@ -19,7 +19,7 @@ public class Lampada {
 
     }
 
-    String statsLampada() {
+    public String statsLampada() {
         if (estado == true) {
             return "LIGADO";
 
