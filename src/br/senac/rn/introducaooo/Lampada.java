@@ -20,7 +20,15 @@ public class Lampada {
 
     }
 
-    ;
+    String statsLampada() {
+        if (estado == true) {
+            return "LIGADO";
+
+        } else {
+            return "DESLIGADO";
+
+        }
+    }
 
 
 }
