@@ -9,8 +9,12 @@ public class TesteContaCorrente {
         ContaCorrente cc = new ContaCorrente();
 
         cc.setTitular("Flavio Araujo");
-        cc.deposita(800.0);
+        cc.setAgencia("1234-8");
+        cc.setNumero("4567-7");
         cc.setTaxa(1.0);
+
+        cc.deposita(800.0);
+
 
         System.out.println(cc);
 

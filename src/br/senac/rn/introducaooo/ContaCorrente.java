@@ -22,8 +22,8 @@ public class ContaCorrente extends Conta {
 
     @Override
     public String toString() {
-        return "ContaCorrente{titular=" + titular +
-                ", saldo=" + saldo +
+        return "ContaCorrente{titular=" + titular + ", " +
+                ", saldo=" + saldo + ", " +
                 ", taxa=" + taxa +
                 ", }";
     }
