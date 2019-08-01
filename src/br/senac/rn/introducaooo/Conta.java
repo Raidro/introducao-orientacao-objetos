@@ -2,10 +2,10 @@ package br.senac.rn.introducaooo;
 
 public class Conta {
 
-    private String agencia;
-    private String numero;
-    private Double saldo = 0.0;
-    private String titular;
+    protected String agencia;
+    protected String numero;
+    protected Double saldo = 0.0;
+    protected String titular;
 
     public String getAgencia() {
         return agencia;
