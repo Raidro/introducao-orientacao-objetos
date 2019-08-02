@@ -13,13 +13,10 @@ public class TesteContaPoupanca {
 
         System.out.println(contaJefferson);
 
-        contaJefferson.rende();
-
-        System.out.println(contaJefferson);
-
-        contaJefferson.rende();
-
-        System.out.println(contaJefferson);
+        for(int i = 0; i<2; i++){
+            contaJefferson.rende();
+            System.out.println(contaJefferson);
+        }
 
     }
 }
