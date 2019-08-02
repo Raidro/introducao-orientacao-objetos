@@ -18,7 +18,7 @@ public class TesteContaCorrente {
 
         contaFlavio.deposita(800.0);
 
-        Conta contaCaio = new Conta();
+        ContaCorrente contaCaio = new ContaCorrente();
 
         contaCaio.setTitular("Caio");
         contaCaio.setNumero("4567-8");
