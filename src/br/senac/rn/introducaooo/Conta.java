@@ -1,6 +1,6 @@
 package br.senac.rn.introducaooo;
 
-public class Conta {
+public abstract class Conta {
 
     protected String agencia;
     protected String numero;
@@ -51,9 +51,7 @@ public class Conta {
     @Override
     public String toString() {
         return "Conta{" +
-                "agencia='" + agencia + '\'' +
-                ", numero='" + numero + '\'' +
-                ", saldo=" + saldo +
+                "saldo=" + saldo +
                 ", titular='" + titular + '\'' +
                 '}';
     }
