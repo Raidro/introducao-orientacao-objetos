@@ -19,7 +19,7 @@ public class ContaCorrente extends Conta {
     @Override
     public void saca(Double valor) {
         Double valorComTaxa = valor + TAXA;
-        super.saca(valor);
+        super.saca(valorComTaxa);
     }
 
     @Override

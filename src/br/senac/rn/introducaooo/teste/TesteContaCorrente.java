@@ -14,7 +14,7 @@ public class TesteContaCorrente {
         contaFlavio.setTitular("Flavio Araujo");
         contaFlavio.setAgencia("1234-8");
         contaFlavio.setNumero("4567-7");
-        contaFlavio.setTaxa(1.0);
+
 
         contaFlavio.deposita(800.0);
 
@@ -29,7 +29,7 @@ public class TesteContaCorrente {
         System.out.println(contaCaio);;
         System.out.println(contaFlavio);
 
-        contaCaio.transfere(contaFlavio,100.0);
+        contaCaio.transfere(contaFlavio,200.0);
 
         System.out.println(contaCaio);
         System.out.println(contaFlavio);
