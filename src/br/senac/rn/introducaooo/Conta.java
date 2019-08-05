@@ -50,9 +50,6 @@ public abstract class Conta {
 
     @Override
     public String toString() {
-        return "Conta{" +
-                "saldo=" + saldo +
-                ", titular='" + titular + '\'' +
-                '}';
+        return "saldo=" + saldo + ", titular='" + titular + "'";
     }
 }

@@ -10,14 +10,16 @@ package br.senac.rn.introducaooo;
 
 public class ContaCorrente extends Conta {
 
-    private Double taxa;
-
-    public void setTaxa(Double taxa) {
-        this.taxa = taxa;
-    }
+    private final Double TAXA = 1.0; // está maiuscula ´pq é constante
 
     public Double getTaxa() {
-        return taxa;
+        return TAXA;
+    }
+
+    @Override
+    public void saca(Double valor) {
+        Double valorComTaxa = valor + TAXA;
+        super.saca(valor);
     }
 
     @Override
