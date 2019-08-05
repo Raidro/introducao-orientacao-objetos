@@ -9,6 +9,16 @@ public class ContaPoupanca extends Conta {
 
     }
 
+
+    @Override
+    public void saca(Double valor) {
+        if (valor <= saldo) {
+            saldo -= valor;
+        }
+
+        System.out.println("SALDO INSUFICIENTE!");
+    }
+
     @Override
     public String toString() {
         return "ContaCorrente{" + super.toString() + "}";

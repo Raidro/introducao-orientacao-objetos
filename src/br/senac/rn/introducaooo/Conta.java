@@ -39,9 +39,7 @@ public abstract class Conta {
         saldo += valor;
     }
 
-    public void saca(Double valor) {
-        saldo -= valor;
-    }
+    public abstract void saca(Double valor);
 
     public void transfere(Conta contaDestino, Double valor) {
         saca(valor);
