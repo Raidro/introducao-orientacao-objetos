@@ -30,7 +30,7 @@ public class TesteContaCorrente {
         System.out.println(contaCaio);;
         System.out.println(contaFlavio);
 
-        contaCaio.transfere(contaFlavio,1600.0);
+        contaCaio.transfere(contaFlavio,1500.0);
 
         System.out.println(contaCaio);
         System.out.println(contaFlavio);
