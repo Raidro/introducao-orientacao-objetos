@@ -12,14 +12,30 @@ public class ContaCorrente extends Conta {
 
     private final Double TAXA = 1.0; // está maiuscula ´pq é constante
 
+    private Double limite = 0.0;
+
+    public void setLimite(Double limite) {
+        this.limite = limite;
+    }
+
+    public Double getLimite() {
+        return limite;
+    }
+
     public Double getTaxa() {
         return TAXA;
     }
 
     @Override
-    public void saca(Double valor) {
+    public Boolean saca(Double valor) {
         Double valorComTaxa = valor + TAXA;
-        super.saca(valorComTaxa);
+        Double saldoComLimite = saldo + limite;
+        if (valorComTaxa <= saldoComLimite) {
+            saldo -= valorComTaxa;
+        }else{
+            System.out.println("SALDO INSUFICIENTE!");
+        }
+
     }
 
     @Override

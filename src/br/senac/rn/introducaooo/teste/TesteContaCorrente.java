@@ -23,13 +23,14 @@ public class TesteContaCorrente {
         contaCaio.setTitular("Caio");
         contaCaio.setNumero("4567-8");
         contaCaio.setAgencia("1546-7");
+        contaCaio.setLimite(500.0);
 
         contaCaio.deposita(1000.0);
 
         System.out.println(contaCaio);;
         System.out.println(contaFlavio);
 
-        contaCaio.transfere(contaFlavio,200.0);
+        contaCaio.transfere(contaFlavio,1600.0);
 
         System.out.println(contaCaio);
         System.out.println(contaFlavio);
