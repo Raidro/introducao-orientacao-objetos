@@ -47,8 +47,8 @@ public abstract class Conta {
     public abstract Boolean saca(Double valor);
 
     public Boolean transfere(Conta contaDestino, Double valor) {
-        if (saca(valor)) {
-            saca(valor);
+        if (saca(valor)) { // o saca ele faz o saque e devolve
+            //saca(valor);
             contaDestino.deposita(valor);
             return true;
         }

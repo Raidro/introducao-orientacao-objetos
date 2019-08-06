@@ -32,6 +32,7 @@ public class ContaCorrente extends Conta {
         Double saldoComLimite = saldo + limite;
         if (valorComTaxa <= saldoComLimite) {
             saldo -= valorComTaxa;
+            return true;
         }
         System.out.println("SALDO INSUFICIENTE!");
         return false;

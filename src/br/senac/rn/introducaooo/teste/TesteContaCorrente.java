@@ -28,8 +28,8 @@ public class TesteContaCorrente {
         ContaCorrente contaCaio = new ContaCorrente();
 
         Pessoa caio = new Pessoa();
-        flavio.setNome("Caio Cesar");
-        flavio.setSexo('M');
+        caio.setNome("Caio Cesar");
+        caio.setSexo('M');
 
         contaCaio.setTitular(caio);
         contaCaio.setNumero("4567-8");
@@ -41,7 +41,7 @@ public class TesteContaCorrente {
         System.out.println(contaCaio);;
         System.out.println(contaFlavio);
 
-        contaCaio.transfere(contaFlavio,1500.0);
+        contaCaio.transfere(contaFlavio,100.0);
 
         System.out.println(contaCaio);
         System.out.println(contaFlavio);
