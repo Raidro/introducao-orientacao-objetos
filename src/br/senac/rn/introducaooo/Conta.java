@@ -5,7 +5,7 @@ public abstract class Conta {
     protected String agencia;
     protected String numero;
     protected Double saldo = 0.0;
-    protected String titular;
+    protected Pessoa titular;
 
     public String getAgencia() {
         return agencia;
