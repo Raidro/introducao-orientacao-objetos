@@ -2,6 +2,7 @@ package br.senac.rn.introducaooo.teste;
 
 import br.senac.rn.introducaooo.Conta;
 import br.senac.rn.introducaooo.ContaCorrente;
+import br.senac.rn.introducaooo.Pessoa;
 
 public class TesteContaCorrente {
     //polimorfismo só tem em heranç
@@ -11,7 +12,13 @@ public class TesteContaCorrente {
 
         ContaCorrente contaFlavio = new ContaCorrente();
 
-        contaFlavio.setTitular("Flavio Araujo");
+        Pessoa flavio = new Pessoa();
+        flavio.setNome("Flavio Araujo");
+        flavio.setSexo('M');
+
+
+
+        contaFlavio.setTitular(flavio);
         contaFlavio.setAgencia("1234-8");
         contaFlavio.setNumero("4567-7");
 
@@ -20,7 +27,11 @@ public class TesteContaCorrente {
 
         ContaCorrente contaCaio = new ContaCorrente();
 
-        contaCaio.setTitular("Caio");
+        Pessoa caio = new Pessoa();
+        flavio.setNome("Caio Cesar");
+        flavio.setSexo('M');
+
+        contaCaio.setTitular(caio);
         contaCaio.setNumero("4567-8");
         contaCaio.setAgencia("1546-7");
         contaCaio.setLimite(500.0);
