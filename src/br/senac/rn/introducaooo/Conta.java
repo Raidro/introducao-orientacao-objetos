@@ -2,10 +2,19 @@ package br.senac.rn.introducaooo;
 
 public abstract class Conta {
 
+    private static Integer id = 0;
+
     protected String agencia;
     protected String numero;
     protected Double saldo = 0.0;
     protected Pessoa titular;
+
+    public Conta() {
+
+        id++;//id = id + 1;
+        numero = id.toString();
+
+    }
 
     public String getAgencia() {
         return agencia;
@@ -27,9 +36,9 @@ public abstract class Conta {
         this.agencia = agencia;
     }
 
-    public void setNumero(String numero) {
+    /*public void setNumero(String numero) {
         this.numero = numero;
-    }
+    }*/
 
     public void setTitular(Pessoa titular) {
         this.titular = titular;
@@ -55,8 +64,17 @@ public abstract class Conta {
         return false;
     }
 
+    /*
     @Override
     public String toString() {
         return "saldo=" + saldo + ", titular='" + titular + "'";
+    }
+     */
+
+    @Override
+    public String toString() {
+        return "numero='" + numero + '\'' +
+                ", saldo=" + saldo +
+                ", titular=" + titular;
     }
 }

@@ -4,7 +4,7 @@ public class Pessoa {
 
     private String nome;
     private String cpf;
-    private Character sexo;
+    private Sexo sexo;
     private String fone;
 
     public String getNome() {
@@ -23,11 +23,11 @@ public class Pessoa {
         this.cpf = cpf;
     }
 
-    public Character getSexo() {
+    public Sexo getSexo() {
         return sexo;
     }
 
-    public void setSexo(Character sexo) {
+    public void setSexo(Sexo sexo) {
         this.sexo = sexo;
     }
 

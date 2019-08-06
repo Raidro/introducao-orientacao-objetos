@@ -3,6 +3,7 @@ package br.senac.rn.introducaooo.teste;
 import br.senac.rn.introducaooo.Conta;
 import br.senac.rn.introducaooo.ContaCorrente;
 import br.senac.rn.introducaooo.Pessoa;
+import br.senac.rn.introducaooo.Sexo;
 
 public class TesteContaCorrente {
     //polimorfismo só tem em heranç
@@ -14,7 +15,7 @@ public class TesteContaCorrente {
 
         Pessoa flavio = new Pessoa();
         flavio.setNome("Flavio Araujo");
-        flavio.setSexo('M');
+        flavio.setSexo(Sexo.MASCULINO);
 
 
 
@@ -29,7 +30,7 @@ public class TesteContaCorrente {
 
         Pessoa caio = new Pessoa();
         caio.setNome("Caio Cesar");
-        caio.setSexo('M');
+        caio.setSexo(Sexo.MASCULINO);
 
         contaCaio.setTitular(caio);
         contaCaio.setNumero("4567-8");
