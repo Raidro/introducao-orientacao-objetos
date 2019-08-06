@@ -2,10 +2,49 @@ package br.senac.rn.introducaooo;
 
 public class Pessoa {
 
-    String nome;
-    String cpf;
-    Character sexo;
-    String fone;
+    private String nome;
+    private String cpf;
+    private Character sexo;
+    private String fone;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public Character getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(Character sexo) {
+        this.sexo = sexo;
+    }
+
+    public String getFone() {
+        return fone;
+    }
+
+    public void setFone(String fone) {
+        this.fone = fone;
+    }
 
 
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", sexo=" + sexo +
+                '}';
+    }
 }

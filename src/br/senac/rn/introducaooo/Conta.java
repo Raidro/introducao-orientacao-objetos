@@ -19,7 +19,7 @@ public abstract class Conta {
         return saldo;
     }
 
-    public String getTitular() {
+    public Pessoa getTitular() {
         return titular;
     }
 
@@ -31,7 +31,7 @@ public abstract class Conta {
         this.numero = numero;
     }
 
-    public void setTitular(String titular) {
+    public void setTitular(Pessoa titular) {
         this.titular = titular;
     }
 
