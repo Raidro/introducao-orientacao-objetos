@@ -21,7 +21,7 @@ public class TesteContaCorrente {
 
         contaFlavio.setTitular(flavio);
         contaFlavio.setAgencia("1234-8");
-        contaFlavio.setNumero("4567-7");
+        //contaFlavio.setNumero("4567-7");
 
 
         contaFlavio.deposita(800.0);
@@ -33,8 +33,10 @@ public class TesteContaCorrente {
         caio.setSexo(Sexo.MASCULINO);
 
         contaCaio.setTitular(caio);
-        contaCaio.setNumero("4567-8");
         contaCaio.setAgencia("1546-7");
+        //contaCaio.setNumero("4567-8");
+
+
         contaCaio.setLimite(500.0);
 
         contaCaio.deposita(1000.0);
