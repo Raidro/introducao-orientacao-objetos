@@ -6,8 +6,9 @@ import br.senac.rn.introducaooo.Pessoa;
 import br.senac.rn.introducaooo.Sexo;
 
 public class TesteContaCorrente {
-    //polimorfismo só tem em heranç
-    //quando o objeto assume o comportamento de outra classe
+    //polimorfismo só tem em herança;
+    //quando o objeto assume o comportamento de outra classe;
+    //classe serva pra criamos modelos do mundo real no sistema;
 
     public static void main(String[] args) {
 
